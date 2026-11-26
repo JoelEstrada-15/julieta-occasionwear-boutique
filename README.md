@@ -93,6 +93,7 @@ Combinación de elegante y lujosa, moderna y minimalista, romántica y tradicion
 │   └── paleta.png                 Muestra de la paleta de colores
 ├── public/
 │   ├── favicon.png                Icono de la pestaña del navegador
+│   ├── images/                    Logos SVG autónomos (dorado y champagne)
 │   └── robots.txt
 └── src/
     ├── assets/                    Fotografías del catálogo (JPG) y punteros del logo
@@ -137,11 +138,17 @@ bun run test       # ejecutar las pruebas
 | Colecciones, nombres de modelos, descripciones | `src/lib/catalog.ts` |
 | Una fotografía | Reemplazar el JPG correspondiente en `src/assets/` (mismo nombre de archivo) |
 | Colores o tipografías | `src/styles.css` (tokens de la paleta y `--font-serif` / `--font-sans`) |
-| El logo | `src/components/Logo.tsx` y los punteros en `src/assets/` |
+| El logo | `src/components/Logo.tsx` y los SVG en `public/images/` |
 | El mensaje que se envía por WhatsApp | `WA_MSG` en `src/components/Layout.tsx` |
 
 El formulario de contacto valida nombre, teléfono, colección de interés y mensaje, y al enviarlo abre
 WhatsApp con todos los datos ya redactados. No guarda información en una base de datos.
+
+Los logotipos del encabezado y pie de página se sirven desde `/images/novias-julieta-logo.svg`
+y `/images/novias-julieta-logo-champagne.svg`. Ambos archivos están incluidos físicamente en el
+repositorio y contienen la imagen original incrustada sin pérdida: mantienen colores, transparencia
+y proporciones de 794 × 290, sin depender de fuentes externas ni de servidores de Lovable.
+Para un despliegue externo, publica los cambios y conserva el contenido de `public/` como archivos estáticos.
 
 ## Detalles ya incluidos
 

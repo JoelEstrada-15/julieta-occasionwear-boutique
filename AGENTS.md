@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Keep both shared logo variants as self-contained SVG files in `public/images/` and reference their root-relative paths; embedding the original artwork preserves its appearance and makes external hosting independent of Lovable's asset proxy.
