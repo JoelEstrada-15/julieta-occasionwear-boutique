@@ -1,80 +1,159 @@
-# Julieta Occasionwear Boutique
+<div align="center">
+  <img src="docs/logo-novias-julieta.png" alt="Novias Julieta" width="300" />
+</div>
 
-# PROYECTO: PÁGINA WEB DE NOVIAS JULIETA
+# Novias Julieta
 
-Desarrollar una página web profesional, elegante y moderna para el negocio **Novias Julieta**, ubicado en Juárez #19, Colonia Centro, La Barca, Jalisco, México.
+**Boutique de vestidos en el centro de La Barca, Jalisco**
 
-El negocio se dedica a la venta de:
-- Vestidos de novia.
-- Vestidos de XV años.
-- Vestidos de primera comunión.
-- Trajes de primera comunión.
-- Vestidos y trajes de bautizo para bebés.
-- Accesorios y artículos relacionados con celebraciones religiosas.
+Escaparate digital elegante y minimalista: catálogo visual por colección y contacto directo por WhatsApp.
+Sin carrito de compras y sin pasarela de pagos.
 
-El objetivo principal es crear un escaparate digital con un catálogo visual que permita presentar los productos, atraer clientes y facilitar el contacto con el establecimiento.
+</div>
 
-No se busca una tienda en línea tradicional. No implementar carrito de compras ni pasarela de pagos.
+---
 
-# 1. IDENTIDAD VISUAL Y ESTILO
+## Qué es este sitio
 
-La personalidad de Novias Julieta debe combinar tres conceptos:
-- Elegante y lujosa.
-- Moderna y minimalista.
-- Romántica y tradicional.
+Novias Julieta vende vestidos y artículos para celebraciones religiosas y familiares. La web funciona
+como vitrina: presenta las colecciones, muestra modelos con fotografía editorial y lleva a la cliente a
+WhatsApp para consultar disponibilidad, precios o una cita en la tienda.
 
-La página debe transmitir la sensación de una boutique de vestidos de alta gama.
+**Colecciones que se venden**
 
-### Paleta de colores
-- Marfil: #F8F3ED
-- Champagne: #D8C0A3
-- Dorado cálido: #9A7556
-- Café profundo: #4B382D
-- Blanco cálido: #FFFCF8
+- Vestidos de novia
+- Vestidos de XV años
+- Vestidos de primera comunión
+- Trajes de primera comunión
+- Vestidos y trajes de bautizo para bebé
+- Accesorios y artículos religiosos
 
-Utilizar tipografías elegantes con serif para los títulos (Cormorant Garamond o Playfair Display) y moderna para los textos (Montserrat / sans-serif).
-Priorizar espacios en blanco, fotografías grandes y composiciones editoriales.
+## Páginas
 
-# 2. LOGOTIPO DE NOVIAS JULIETA
-Crear logotipo original en SVG para la marca:
-- Símbolo inspirado en la silueta de un vestido de novia, integrando sutilmente las iniciales N y J.
-- Nombre Novias Julieta con tipografía elegante y detalles delicados en champagne y dorado cálido.
-- Funcional sobre fondos claros y oscuros, integrado en encabezado y pie de página.
+| Ruta | Nombre | Contenido |
+| --- | --- | --- |
+| `/` | Inicio | Portada editorial, tarjetas de colecciones y modelos destacados |
+| `/catalogo` | Catálogo | Grid de modelos con filtros por colección (`/catalogo?cat=xv`, `?cat=novia`, …) |
+| `/nosotros` | Nosotros | Historia de la boutique en dos columnas |
+| `/contacto` | Contacto | Datos del local, mapa y formulario |
+| cualquier otra | 404 | Página de no encontrado con enlace de regreso |
 
-# 3. ESTRUCTURA DE LA PÁGINA
-A. Encabezado y navegación fija (Logo, Inicio, Colecciones con dropdown, Nosotros, Contacto, botón WhatsApp "Contáctanos", menú responsive).
-B. Portada Hero (foto editorial elegante, título "Viste tus momentos más especiales", subtítulo "Elegancia, fe y tradición en cada detalle.", botón "Descubrir colección").
-C. Nuestras colecciones (tarjetas visuales: Vestidos de novia, Vestidos de XV años, Vestidos de primera comunión, Trajes de primera comunión, Vestidos y trajes de bautizo para bebé, Accesorios y artículos religiosos).
-D. Catálogo de productos "Descubre nuestros modelos" con filtros funcionales por categoría y botón "Consultar disponibilidad" vía WhatsApp por cada producto.
-E. Presentación del negocio "Tradición y elegancia para cada ocasión" con diseño editorial a 2 columnas.
-F. Contacto a dos columnas (datos del local en Juárez #19, Col. Centro, La Barca, Jalisco, mapa/info y formulario completo con validación).
-G. Pie de página en café profundo (#4B382D) con frase "Tus sueños, nuestra inspiración", enlaces y datos.
+Encabezado, pie de página y botón flotante de WhatsApp son compartidos: se ven igual en todas las páginas.
 
-# 4. ANIMACIONES Y MICROINTERACCIONES
-Implementar animaciones suaves con Framer Motion / Motion:
-- Fade in + slide up y slow zoom en Hero.
-- Stagger fade-in en colecciones y tarjetas de catálogo.
-- Hover states refinados en botones y fotos.
-- Botón flotante de WhatsApp accesible.
-- Datos de contacto y WhatsApp centralizados y configurables.
+## Modelos del catálogo
 
-This project was built with [Lovable](https://lovable.dev).
+Cada tarjeta tiene un botón **"Consultar disponibilidad"** que abre WhatsApp con el mensaje ya escrito.
 
-## Build with Lovable
+| Modelo | Colección | Descripción |
+| --- | --- | --- |
+| Modelo Aurora | Vestidos de novia | Corte sirena con encaje bordado y cola catedral |
+| Modelo Celeste | Vestidos de novia | Encaje floral strapless con caída de tul |
+| Modelo Valentina | Vestidos de XV años | Corte princesa champagne con aplicaciones florales |
+| Modelo Azucena | Vestidos de primera comunión | Tul y encaje con lazo de satín en la cintura |
+| Traje Santiago | Trajes de primera comunión | Saco, chaleco y moño en tono marfil |
+| Ropón Gracia | Bautizo | Ropón de encaje con gorrito a juego |
+| Set Bendición | Accesorios | Rosario de perla, vela, tiara y velo de encaje |
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c87976da-5183-4caf-ae1c-8618b3c1c87e).
+## Identidad visual
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Combinación de elegante y lujosa, moderna y minimalista, romántica y tradicional.
 
-## Development
+![Paleta de colores de Novias Julieta](docs/paleta.png)
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+| Color | Hex | Se usa para |
+| --- | --- | --- |
+| Marfil | `#F8F3ED` | Fondos principales |
+| Champagne | `#D8C0A3` | Líneas, bordes y acentos |
+| Dorado cálido | `#9A7556` | Enlaces, etiquetas y detalles |
+| Café profundo | `#4B382D` | Pie de página y textos sobre claro |
+| Blanco cálido | `#FFFCF8` | Tarjetas y secciones alternas |
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+**Tipografías**
+
+- **Títulos:** Cormorant Garamond (serif elegante)
+- **Textos:** Montserrat (sans-serif moderna)
+
+## Stack técnico
+
+| Pieza | Uso |
+| --- | --- |
+| TanStack Start (React 19, Vite) | Enrutado por archivos, renderizado en servidor, `head()` por página |
+| Tailwind CSS v4 | Diseño y tokens de color en `src/styles.css` |
+| Motion (`motion/react`) | Animaciones y microinteracciones |
+| lucide-react | Iconos |
+| zod | Validación del formulario de contacto |
+| Vitest + Testing Library | Prueba de rutas |
+
+## Estructura
+
+```text
+.
+├── docs/
+│   ├── logo-novias-julieta.png    Logo para este README
+│   └── paleta.png                 Muestra de la paleta de colores
+├── public/
+│   ├── favicon.png                Icono de la pestaña del navegador
+│   └── robots.txt
+└── src/
+    ├── assets/                    Fotografías del catálogo (JPG) y punteros del logo
+    ├── components/
+    │   ├── Layout.tsx             Encabezado, pie de página, botón flotante de WhatsApp
+    │   ├── Logo.tsx               Logo (variante dorada y variante champagne)
+    │   ├── ProductGrid.tsx        Tarjetas de modelos con filtro
+    │   └── ui/                    Componentes base
+    ├── lib/
+    │   ├── catalog.ts             Colecciones y modelos
+    │   ├── site.ts                Teléfono, WhatsApp, dirección, horarios
+    │   └── utils.ts
+    ├── routes/
+    │   ├── __root.tsx             Plantilla común: <head>, encabezado, pie, 404
+    │   ├── index.tsx              /
+    │   ├── catalogo.tsx           /catalogo
+    │   ├── nosotros.tsx           /nosotros
+    │   └── contacto.tsx           /contacto
+    ├── styles.css                 Paleta, tipografías y estilos de botones
+    └── test/                      Prueba de enrutado
 ```
+
+## Cómo correrlo
+
+Se usa **bun** como gestor de paquetes.
+
+```bash
+bun install        # instalar dependencias
+bun run dev        # entorno de desarrollo
+bun run build      # compilar para producción
+bun run preview    # ver la versión compilada
+bun run lint       # revisar código
+bun run format     # dar formato
+bun run test       # ejecutar las pruebas
+```
+
+## Cómo personalizarlo
+
+| Quiero cambiar… | Edito… |
+| --- | --- |
+| Teléfono, WhatsApp, dirección, horarios, correo | `src/lib/site.ts` (un solo lugar, se aplica en todo el sitio) |
+| Colecciones, nombres de modelos, descripciones | `src/lib/catalog.ts` |
+| Una fotografía | Reemplazar el JPG correspondiente en `src/assets/` (mismo nombre de archivo) |
+| Colores o tipografías | `src/styles.css` (tokens de la paleta y `--font-serif` / `--font-sans`) |
+| El logo | `src/components/Logo.tsx` y los punteros en `src/assets/` |
+| El mensaje que se envía por WhatsApp | `WA_MSG` en `src/components/Layout.tsx` |
+
+El formulario de contacto valida nombre, teléfono, colección de interés y mensaje, y al enviarlo abre
+WhatsApp con todos los datos ya redactados. No guarda información en una base de datos.
+
+## Detalles ya incluidos
+
+- Animaciones suaves: aparición con desplazamiento en portada y colecciones, zoom lento en la foto principal,
+  estados al pasar el cursor en botones y fotos.
+- Navegación fija con menú desplegable de colecciones y menú para móvil.
+- Botón flotante de WhatsApp accesible (con etiqueta para lectores de pantalla).
+- Datos de contacto y WhatsApp centralizados y configurables.
+- Título, descripción y vista previa distinta en cada página para compartir en redes.
+- Fotografías de catálogo generadas para la muestra: conviene sustituirlas por fotos reales de la tienda.
+
+## Contacto
+
+**Novias Julieta** · Juárez #19, Col. Centro, La Barca, Jalisco, México
+Tel. y WhatsApp: **393 100 1337** · Lunes a sábado 10:00–20:00, domingo 11:00–15:00
