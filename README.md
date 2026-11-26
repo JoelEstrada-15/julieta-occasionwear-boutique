@@ -145,8 +145,9 @@ bun run test       # ejecutar las pruebas
 El formulario de contacto valida nombre, teléfono, colección de interés y mensaje, y al enviarlo abre
 WhatsApp con todos los datos ya redactados. No guarda información en una base de datos.
 
-El logotipo del encabezado se sirve desde `/images/novias-julieta-logo.svg` y el escudo de CUCEI
-del pie de página desde `/images/escudo-cucei.svg`. Ambos archivos están incluidos físicamente en el
+El logotipo del encabezado se sirve desde `/images/novias-julieta-logo.svg`, el del pie de página
+desde `/images/novias-julieta-logo-champagne.svg` y el escudo de CUCEI desde
+`/images/escudo-cucei.svg`. Ambos archivos están incluidos físicamente en el
 repositorio y contienen la imagen original incrustada sin pérdida: mantienen colores, transparencia
 y proporciones originales, sin depender de fuentes externas ni de servidores de Lovable.
 Para un despliegue externo, publica los cambios y conserva el contenido de `public/` como archivos estáticos.
