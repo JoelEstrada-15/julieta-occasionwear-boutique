@@ -139,15 +139,16 @@ bun run test       # ejecutar las pruebas
 | Una fotografía | Reemplazar el JPG correspondiente en `src/assets/` (mismo nombre de archivo) |
 | Colores o tipografías | `src/styles.css` (tokens de la paleta y `--font-serif` / `--font-sans`) |
 | El logo | `src/components/Logo.tsx` y los SVG en `public/images/` |
+| Los datos del pie de página (alumno, materia, profesor, calendario) | `src/components/Layout.tsx` (función `Footer`) |
 | El mensaje que se envía por WhatsApp | `WA_MSG` en `src/components/Layout.tsx` |
 
 El formulario de contacto valida nombre, teléfono, colección de interés y mensaje, y al enviarlo abre
 WhatsApp con todos los datos ya redactados. No guarda información en una base de datos.
 
-Los logotipos del encabezado y pie de página se sirven desde `/images/novias-julieta-logo.svg`
-y `/images/novias-julieta-logo-champagne.svg`. Ambos archivos están incluidos físicamente en el
+El logotipo del encabezado se sirve desde `/images/novias-julieta-logo.svg` y el escudo de CUCEI
+del pie de página desde `/images/escudo-cucei.svg`. Ambos archivos están incluidos físicamente en el
 repositorio y contienen la imagen original incrustada sin pérdida: mantienen colores, transparencia
-y proporciones de 794 × 290, sin depender de fuentes externas ni de servidores de Lovable.
+y proporciones originales, sin depender de fuentes externas ni de servidores de Lovable.
 Para un despliegue externo, publica los cambios y conserva el contenido de `public/` como archivos estáticos.
 
 ## Detalles ya incluidos
