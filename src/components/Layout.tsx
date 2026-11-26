@@ -1,9 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ChevronDown, Menu, X, MapPin, Phone, Mail, MessageCircle } from "lucide-react";
+import { ChevronDown, Menu, X, MessageCircle } from "lucide-react";
 import { Logo } from "./Logo";
 import { CATEGORIES } from "@/lib/catalog";
-import { SITE, waLink } from "@/lib/site";
+import { waLink } from "@/lib/site";
 
 const WA_MSG = "Hola, me gustaría recibir información sobre sus vestidos.";
 
@@ -57,28 +57,30 @@ export function Header() {
 export function Footer() {
   return (
     <footer className="bg-espresso text-ivory">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-3">
-        <div>
-          <Logo dark className="h-12 w-auto" />
-          <p className="mt-6 font-serif text-2xl italic text-champagne">Tus sueños, nuestra inspiración</p>
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6 py-16 md:flex-row md:items-center md:justify-center md:gap-16">
+        <div className="shrink-0 rounded-2xl bg-ivory p-6 shadow-xl">
+          <img src="/images/escudo-cucei.svg" alt="Escudo del CUCEI" className="h-40 w-auto" />
         </div>
-        <div>
-          <h3 className="text-xs uppercase tracking-[0.25em] text-champagne">Colecciones</h3>
-          <ul className="mt-4 space-y-2 text-sm">
-            {CATEGORIES.map((c) => (
-              <li key={c.id}><Link to="/catalogo" search={{ cat: c.id }} className="opacity-80 hover:text-champagne hover:opacity-100">{c.name}</Link></li>
-            ))}
-          </ul>
-        </div>
-        <div className="space-y-3 text-sm">
-          <h3 className="text-xs uppercase tracking-[0.25em] text-champagne">Visítanos</h3>
-          <p className="flex gap-2 opacity-80"><MapPin className="h-4 w-4 shrink-0 text-champagne" />{SITE.address}, {SITE.city}</p>
-          <p className="flex gap-2 opacity-80"><Phone className="h-4 w-4 text-champagne" />{SITE.phoneDisplay}</p>
-          <p className="flex gap-2 opacity-80"><Mail className="h-4 w-4 text-champagne" />{SITE.email}</p>
-          <div className="flex gap-4 pt-2 text-xs uppercase tracking-[0.2em]">
-            <Link to="/nosotros" className="hover:text-champagne">Nosotros</Link>
-            <Link to="/contacto" className="hover:text-champagne">Contacto</Link>
-          </div>
+        <div className="text-center md:text-left">
+          <h3 className="text-xs uppercase tracking-[0.25em] text-champagne">Proyecto académico</h3>
+          <dl className="mt-6 space-y-3 text-sm">
+            <div>
+              <dt className="inline uppercase tracking-[0.15em] text-champagne text-xs">Nombre del alumno: </dt>
+              <dd className="inline opacity-90">Joel Emmanuel Estrada Mendoza</dd>
+            </div>
+            <div>
+              <dt className="inline uppercase tracking-[0.15em] text-champagne text-xs">Materia: </dt>
+              <dd className="inline opacity-90">Diseño de Aplicaciones Web en la Nube y Móviles</dd>
+            </div>
+            <div>
+              <dt className="inline uppercase tracking-[0.15em] text-champagne text-xs">Profesor: </dt>
+              <dd className="inline opacity-90">Zeus Emanuel Gutiérrez Cobián</dd>
+            </div>
+            <div>
+              <dt className="inline uppercase tracking-[0.15em] text-champagne text-xs">Calendario: </dt>
+              <dd className="inline opacity-90">2026B</dd>
+            </div>
+          </dl>
         </div>
       </div>
       <div className="border-t border-ivory/10 py-6 text-center text-xs opacity-60">© {new Date().getFullYear()} Novias Julieta · La Barca, Jalisco</div>
