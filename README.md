@@ -93,10 +93,10 @@ Combinación de elegante y lujosa, moderna y minimalista, romántica y tradicion
 │   └── paleta.png                 Muestra de la paleta de colores
 ├── public/
 │   ├── favicon.png                Icono de la pestaña del navegador
-│   ├── images/                    Logos SVG autónomos (dorado y champagne)
+│   ├── images/                    Logos SVG autónomos (dorado y champagne) y escudo de CUCEI
 │   └── robots.txt
 └── src/
-    ├── assets/                    Fotografías del catálogo (JPG) y punteros del logo
+    ├── assets/                    Fotografías del catálogo (JPG)
     ├── components/
     │   ├── Layout.tsx             Encabezado, pie de página, botón flotante de WhatsApp
     │   ├── Logo.tsx               Logo (variante dorada y variante champagne)
@@ -139,7 +139,7 @@ bun run test       # ejecutar las pruebas
 | Una fotografía | Reemplazar el JPG correspondiente en `src/assets/` (mismo nombre de archivo) |
 | Colores o tipografías | `src/styles.css` (tokens de la paleta y `--font-serif` / `--font-sans`) |
 | El logo | `src/components/Logo.tsx` y los SVG en `public/images/` |
-| Los datos del pie de página (alumno, materia, profesor, calendario) | `src/components/Layout.tsx` (función `Footer`) |
+| Los datos académicos del pie de página (alumno, materia, profesor, calendario) | `src/components/Layout.tsx` (función `Footer`) |
 | El mensaje que se envía por WhatsApp | `WA_MSG` en `src/components/Layout.tsx` |
 
 El formulario de contacto valida nombre, teléfono, colección de interés y mensaje, y al enviarlo abre
@@ -147,7 +147,7 @@ WhatsApp con todos los datos ya redactados. No guarda información en una base d
 
 El logotipo del encabezado se sirve desde `/images/novias-julieta-logo.svg`, el del pie de página
 desde `/images/novias-julieta-logo-champagne.svg` y el escudo de CUCEI desde
-`/images/escudo-cucei.svg`. Ambos archivos están incluidos físicamente en el
+`/images/escudo-cucei.svg`. Los tres archivos están incluidos físicamente en el
 repositorio y contienen la imagen original incrustada sin pérdida: mantienen colores, transparencia
 y proporciones originales, sin depender de fuentes externas ni de servidores de Lovable.
 Para un despliegue externo, publica los cambios y conserva el contenido de `public/` como archivos estáticos.
