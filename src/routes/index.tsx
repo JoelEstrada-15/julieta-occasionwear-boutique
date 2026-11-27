@@ -21,7 +21,8 @@ function Index() {
     <>
       <section className="relative h-[calc(100vh-5rem)] min-h-[560px] overflow-hidden">
         <motion.img src={heroImg} alt="Novia con vestido de encaje en boutique" width={1920} height={1088}
-          initial={{ scale: 1.12 }} animate={{ scale: 1 }} transition={{ duration: 8, ease: "easeOut" }}
+          initial={{ scale: 1.05 }} animate={{ scale: 1 }} transition={{ duration: 8, ease: "easeOut" }}
+          style={{ objectPosition: "57% 0%" }}
           className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-espresso/70 via-espresso/30 to-transparent" />
         <div className="relative mx-auto flex h-full max-w-7xl items-center px-6">
