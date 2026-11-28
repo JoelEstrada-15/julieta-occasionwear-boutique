@@ -95,7 +95,7 @@ export function Footer() {
               </div>
               <div>
                 <dt className="inline uppercase tracking-[0.15em] text-champagne text-xs">Materia: </dt>
-                <dd className="inline opacity-90">Diseño de Aplicaciones Web en la Nube y Móviles</dd>
+                <dd className="inline opacity-90">Diseño de aplicaciones web, en la nube y móviles</dd>
               </div>
               <div>
                 <dt className="inline uppercase tracking-[0.15em] text-champagne text-xs">Profesor: </dt>
